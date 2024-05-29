@@ -1,9 +1,10 @@
 // Write your code here
+// Write your code here
 import './index.css'
 
 const TodoItem = props => {
-  const {todoList, onDeleteItem, id} = props
-  const {title} = todoList
+  const {todoList, onDeleteItem, key} = props
+  const {title, id} = todoList
 
   const onDelete = () => {
     onDeleteItem(id)
